@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. João Silva | Advogado Especialista</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow fixed w-full top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-700">Dr. João Silva</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#sobre" class="text-gray-600 hover:text-blue-600">Sobre</a>
+        <a href="#servicos" class="text-gray-600 hover:text-blue-600">Serviços</a>
+        <a href="#depoimentos" class="text-gray-600 hover:text-blue-600">Depoimentos</a>
+        <a href="#contato" class="text-gray-600 hover:text-blue-600">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-32 text-center" id="hero">
+    <div class="container mx-auto px-6" data-aos="fade-down">
+      <h1 class="text-5xl font-extrabold mb-6">Defendendo Seus Direitos com Excelência</h1>
+      <p class="text-lg mb-8">Especialista em Direito Trabalhista, Civil e Previdenciário. Atuação em todo o Brasil.</p>
+      <a href="#contato" class="bg-white text-blue-800 font-bold py-3 px-6 rounded-full text-lg shadow hover:bg-gray-100 transition">Agende uma Consulta</a>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-20">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://images.unsplash.com/photo-1555375771-4c6c7a6ae1b4" alt="Advogado" class="rounded-xl shadow-lg" data-aos="fade-right">
+      <div data-aos="fade-left">
+        <h2 class="text-3xl font-bold mb-4">Sobre o Dr. João Silva</h2>
+        <p class="text-gray-700 mb-4">Advogado inscrito na OAB/SP 123.456, com mais de 10 anos de experiência. Atende causas em todo o país com foco em solução ágil e eficaz.</p>
+        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+          <li>Pós-graduado em Direito do Trabalho</li>
+          <li>Experiência em Direito Civil e de Família</li>
+          <li>Consultor jurídico para empresas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="bg-gray-100 py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10" data-aos="zoom-in">Áreas de Atuação</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">Direito Trabalhista</h3>
+          <p>Demissão, rescisão, horas extras, assédio moral e outros direitos.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-2">Direito Civil</h3>
+          <p>Indenizações, contratos, cobranças, danos morais e patrimoniais.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-2">Direito Previdenciário</h3>
+          <p>Aposentadoria, revisões, pensão por morte, auxílio-doença e mais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10" data-aos="fade-up">O que dizem os clientes</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-right">
+          <p class="italic">“Um profissional íntegro, sempre transparente e comprometido. Recomendo muito!”</p>
+          <p class="mt-4 font-semibold">- Maria Ferreira</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-left">
+          <p class="italic">“Meu processo foi resolvido de forma rápida e eficiente. Estou muito satisfeito com o resultado!”</p>
+          <p class="mt-4 font-semibold">- José da Silva</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="bg-blue-800 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8" data-aos="zoom-in">Fale com o Dr. João</h2>
+      <form class="max-w-xl mx-auto grid gap-6" data-aos="fade-up">
+        <input type="text" placeholder="Nome" class="p-4 rounded text-gray-800" required>
+        <input type="email" placeholder="E-mail" class="p-4 rounded text-gray-800" required>
+        <input type="tel" placeholder="Telefone" class="p-4 rounded text-gray-800" required>
+        <textarea rows="5" placeholder="Descreva seu caso..." class="p-4 rounded text-gray-800" required></textarea>
+        <button type="submit" class="bg-white text-blue-800 font-bold py-3 rounded hover:bg-gray-100 transition">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+    <p>&copy; 2025 Dr. João Silva - Todos os direitos reservados.</p>
+    <p>contato@drjoaosilva.com.br | Escritório em São Paulo - SP</p>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
