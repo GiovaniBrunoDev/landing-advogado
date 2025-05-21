@@ -4,25 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dra. Juliana Perdoncini | Direito Imobiliário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <style>
-    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
     .hero {
-      background: linear-gradient(to right, #004e92, #000428);
+      background: linear-gradient(to right, #1c1c1c, #343434);
       color: white;
-      padding: 80px 0;
+      padding: 100px 0;
       text-align: center;
     }
-    .section { padding: 60px 0; }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .section h2 {
+      margin-bottom: 30px;
+    }
     .whatsapp-btn {
       background: #25D366;
       color: white;
-      padding: 12px 24px;
-      border-radius: 5px;
+      padding: 12px 30px;
+      border-radius: 30px;
       text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+    .section ul li {
+      margin-bottom: 12px;
+    }
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
     }
   </style>
 </head>
@@ -31,71 +69,73 @@
   <section class="hero" data-aos="fade-in">
     <div class="container">
       <h1>Direito Imobiliário</h1>
-      <p class="lead">Advocacia Especializada com 23 Anos de Experiência Jurídica</p>
-      <p>Serviços jurídicos para proprietários, inquilinos e investidores imobiliários.</p>
-      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Falar com uma Advogada</a>
+      <p>Advocacia especializada com 23 anos de experiência jurídica, focada em proprietários, inquilinos e investidores.</p>
+      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Falar com a Dra. Juliana</a>
+    </div>
+  </section>
+
+  <section class="section bg-white" data-aos="fade-up">
+    <div class="container text-center">
+      <h2>Áreas de Atuação</h2>
+      <p>Regulamentação de bens imóveis com segurança jurídica nos negócios imobiliários.</p>
     </div>
   </section>
 
   <section class="section bg-light" data-aos="fade-up">
     <div class="container">
-      <h2 class="text-center">Área de Atuação</h2>
-      <p class="text-center">O Direito Imobiliário regula os bens imóveis com foco em segurança jurídica nas transações.</p>
-    </div>
-  </section>
-
-  <section class="section" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center mb-4">Nossos Serviços</h2>
-      <ul>
-        <li>Transferência de propriedade, usufruto, comodato</li>
-        <li>Incorporação Imobiliária, Constituição de Condomínios</li>
-        <li>Contratos imobiliários, assessoria registral</li>
-        <li>Ações de cobrança, despejo, notificações extrajudiciais</li>
-        <li>Assessoria a empreendimentos, estrutura jurídica segura</li>
-        <li>Retomada de imóveis, contenção da inadimplência</li>
-      </ul>
-      <div class="text-center">
+      <h2 class="text-center">Serviços Jurídicos</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>Transferência de propriedade, usufruto e comodato</li>
+            <li>Incorporação Imobiliária e Constituição de Condomínios</li>
+            <li>Elaboração e revisão de contratos imobiliários</li>
+            <li>Assessoria perante cartórios e registros de imóveis</li>
+            <li>Notificações extrajudiciais, ações de cobrança e despejo</li>
+            <li>Retomada de imóveis e rescisões</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Assessoria em empreendimentos residenciais e comerciais</li>
+            <li>Estrutura jurídica para incorporação</li>
+            <li>Prevenção à inadimplência</li>
+            <li>Consultoria para legalização de imóveis</li>
+            <li>Assessoria junto a órgãos públicos</li>
+            <li>Cobrança de aluguéis e ações de consignação</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-4">
         <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Quero ajuda especializada</a>
       </div>
     </div>
   </section>
 
-  <section class="section bg-light" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center">Vantagens de Ter um Imóvel Legalizado</h2>
-      <ul>
-        <li>Segurança para vender, transferir ou alugar</li>
-        <li>Somente imóveis regulares podem ser financiados</li>
-        <li>Valorização de até 40%</li>
+  <section class="section bg-white" data-aos="fade-up">
+    <div class="container text-center">
+      <h2>Vantagens de Legalizar seu Imóvel</h2>
+      <ul class="list-unstyled">
+        <li>✅ Venda, locação ou financiamento com segurança</li>
+        <li>✅ Valorização de até 40%</li>
+        <li>✅ Tranquilidade e regularização jurídica</li>
       </ul>
-      <div class="text-center">
-        <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Quero entrar em contato</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Advogada Especialista em Direito Imobiliário</h2>
-      <p>Fale diretamente com uma advogada especialista no WhatsApp.</p>
-      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Quero ajuda especializada</a>
+      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn mt-3">Quero entrar em contato</a>
     </div>
   </section>
 
   <section class="section bg-light" data-aos="fade-up">
     <div class="container text-center">
-      <h2>Seja Assessorado por uma Especialista</h2>
-      <p>Advocacia humanizada e próxima de você, focada na solução de questões imobiliárias.</p>
-      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Quero ajuda especializada</a>
+      <h2>Especialista ao seu lado</h2>
+      <p>Atendimento dedicado para resolver com excelência as questões do seu imóvel.</p>
+      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Falar com uma especialista</a>
     </div>
   </section>
 
-  <section class="section" data-aos="fade-up">
+  <section class="section bg-white" data-aos="fade-up">
     <div class="container text-center">
       <h2>Dra. Juliana Perdoncini C. Hoffmann</h2>
-      <p>Advogada Mestra e Especialista - 23 Anos de Experiência Jurídica</p>
-      <p>OAB/SC 23.911</p>
+      <p>Advogada Mestra e Especialista em Direito Imobiliário<br>23 Anos de Experiência Jurídica | OAB/SC 23.911</p>
     </div>
   </section>
 
@@ -104,13 +144,17 @@
       <h2>Por Que Escolher Nosso Escritório</h2>
       <ul class="list-unstyled">
         <li>✅ Atendimento online e presencial (Blumenau/SC)</li>
-        <li>✅ Disponibilidade 24 horas</li>
-        <li>✅ Advocacia moderna e experiente</li>
-        <li>✅ Especialistas em problemas imobiliários</li>
+        <li>✅ Disponibilidade 24 horas, todos os dias</li>
+        <li>✅ Advocacia moderna, estratégica e eficiente</li>
+        <li>✅ Foco exclusivo em Direito Imobiliário</li>
       </ul>
-      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Quero entrar em contato</a>
+      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn mt-3">Agendar atendimento</a>
     </div>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Dra. Juliana Perdoncini | Todos os direitos reservados</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
