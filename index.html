@@ -1,163 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra. Juliana Perdoncini | Direito Imobiliário</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. João Silva | Advogado Especialista</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      background-color: #f8f9fa;
-    }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-    }
-    .hero {
-      background: linear-gradient(to right, #1c1c1c, #343434);
-      color: white;
-      padding: 100px 0;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: 0 auto 30px auto;
-    }
-    .section {
-      padding: 60px 0;
-    }
-    .section h2 {
-      margin-bottom: 30px;
-    }
-    .whatsapp-btn {
-      background: #25D366;
-      color: white;
-      padding: 12px 30px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 500;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: background 0.3s;
-    }
-    .whatsapp-btn:hover {
-      background: #1ebe5d;
-    }
-    .section ul li {
-      margin-bottom: 12px;
-    }
-    footer {
-      background-color: #212529;
-      color: white;
-      padding: 30px 0;
-      text-align: center;
-    }
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
   </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-  <section class="hero" data-aos="fade-in">
-    <div class="container">
-      <h1>Direito Imobiliário</h1>
-      <p>Advocacia especializada com 23 anos de experiência jurídica, focada em proprietários, inquilinos e investidores.</p>
-      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Falar com a Dra. Juliana</a>
+  <!-- NAVBAR -->
+  <header class="bg-white shadow fixed w-full top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-700">Dr. João Silva</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#sobre" class="text-gray-600 hover:text-blue-600">Sobre</a>
+        <a href="#servicos" class="text-gray-600 hover:text-blue-600">Serviços</a>
+        <a href="#depoimentos" class="text-gray-600 hover:text-blue-600">Depoimentos</a>
+        <a href="#contato" class="text-gray-600 hover:text-blue-600">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-32 text-center" id="hero">
+    <div class="container mx-auto px-6" data-aos="fade-down">
+      <h1 class="text-5xl font-extrabold mb-6">Defendendo Seus Direitos com Excelência</h1>
+      <p class="text-lg mb-8">Especialista em Direito Trabalhista, Civil e Previdenciário. Atuação em todo o Brasil.</p>
+      <a href="#contato" class="bg-white text-blue-800 font-bold py-3 px-6 rounded-full text-lg shadow hover:bg-gray-100 transition">Agende uma Consulta</a>
     </div>
   </section>
 
-  <section class="section bg-white" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Áreas de Atuação</h2>
-      <p>Regulamentação de bens imóveis com segurança jurídica nos negócios imobiliários.</p>
-    </div>
-  </section>
-
-  <section class="section bg-light" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center">Serviços Jurídicos</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <ul>
-            <li>Transferência de propriedade, usufruto e comodato</li>
-            <li>Incorporação Imobiliária e Constituição de Condomínios</li>
-            <li>Elaboração e revisão de contratos imobiliários</li>
-            <li>Assessoria perante cartórios e registros de imóveis</li>
-            <li>Notificações extrajudiciais, ações de cobrança e despejo</li>
-            <li>Retomada de imóveis e rescisões</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <ul>
-            <li>Assessoria em empreendimentos residenciais e comerciais</li>
-            <li>Estrutura jurídica para incorporação</li>
-            <li>Prevenção à inadimplência</li>
-            <li>Consultoria para legalização de imóveis</li>
-            <li>Assessoria junto a órgãos públicos</li>
-            <li>Cobrança de aluguéis e ações de consignação</li>
-          </ul>
-        </div>
-      </div>
-      <div class="text-center mt-4">
-        <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Quero ajuda especializada</a>
+  <!-- SOBRE -->
+  <section id="sobre" class="py-20">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <img src="https://images.unsplash.com/photo-1555375771-4c6c7a6ae1b4" alt="Advogado" class="rounded-xl shadow-lg" data-aos="fade-right">
+      <div data-aos="fade-left">
+        <h2 class="text-3xl font-bold mb-4">Sobre o Dr. João Silva</h2>
+        <p class="text-gray-700 mb-4">Advogado inscrito na OAB/SP 123.456, com mais de 10 anos de experiência. Atende causas em todo o país com foco em solução ágil e eficaz.</p>
+        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+          <li>Pós-graduado em Direito do Trabalho</li>
+          <li>Experiência em Direito Civil e de Família</li>
+          <li>Consultor jurídico para empresas</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="section bg-white" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Vantagens de Legalizar seu Imóvel</h2>
-      <ul class="list-unstyled">
-        <li>✅ Venda, locação ou financiamento com segurança</li>
-        <li>✅ Valorização de até 40%</li>
-        <li>✅ Tranquilidade e regularização jurídica</li>
-      </ul>
-      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn mt-3">Quero entrar em contato</a>
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="bg-gray-100 py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10" data-aos="zoom-in">Áreas de Atuação</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">Direito Trabalhista</h3>
+          <p>Demissão, rescisão, horas extras, assédio moral e outros direitos.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-2">Direito Civil</h3>
+          <p>Indenizações, contratos, cobranças, danos morais e patrimoniais.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-2">Direito Previdenciário</h3>
+          <p>Aposentadoria, revisões, pensão por morte, auxílio-doença e mais.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section bg-light" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Especialista ao seu lado</h2>
-      <p>Atendimento dedicado para resolver com excelência as questões do seu imóvel.</p>
-      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn">Falar com uma especialista</a>
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10" data-aos="fade-up">O que dizem os clientes</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-right">
+          <p class="italic">“Um profissional íntegro, sempre transparente e comprometido. Recomendo muito!”</p>
+          <p class="mt-4 font-semibold">- Maria Ferreira</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-left">
+          <p class="italic">“Meu processo foi resolvido de forma rápida e eficiente. Estou muito satisfeito com o resultado!”</p>
+          <p class="mt-4 font-semibold">- José da Silva</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section bg-white" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Dra. Juliana Perdoncini C. Hoffmann</h2>
-      <p>Advogada Mestra e Especialista em Direito Imobiliário<br>23 Anos de Experiência Jurídica | OAB/SC 23.911</p>
+  <!-- CONTATO -->
+  <section id="contato" class="bg-blue-800 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8" data-aos="zoom-in">Fale com o Dr. João</h2>
+      <form class="max-w-xl mx-auto grid gap-6" data-aos="fade-up">
+        <input type="text" placeholder="Nome" class="p-4 rounded text-gray-800" required>
+        <input type="email" placeholder="E-mail" class="p-4 rounded text-gray-800" required>
+        <input type="tel" placeholder="Telefone" class="p-4 rounded text-gray-800" required>
+        <textarea rows="5" placeholder="Descreva seu caso..." class="p-4 rounded text-gray-800" required></textarea>
+        <button type="submit" class="bg-white text-blue-800 font-bold py-3 rounded hover:bg-gray-100 transition">Enviar Mensagem</button>
+      </form>
     </div>
   </section>
 
-  <section class="section bg-light" data-aos="fade-up">
-    <div class="container text-center">
-      <h2>Por Que Escolher Nosso Escritório</h2>
-      <ul class="list-unstyled">
-        <li>✅ Atendimento online e presencial (Blumenau/SC)</li>
-        <li>✅ Disponibilidade 24 horas, todos os dias</li>
-        <li>✅ Advocacia moderna, estratégica e eficiente</li>
-        <li>✅ Foco exclusivo em Direito Imobiliário</li>
-      </ul>
-      <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn mt-3">Agendar atendimento</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Dra. Juliana Perdoncini | Todos os direitos reservados</p>
+  <!-- RODAPÉ -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+    <p>&copy; 2025 Dr. João Silva - Todos os direitos reservados.</p>
+    <p>contato@drjoaosilva.com.br | Escritório em São Paulo - SP</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
